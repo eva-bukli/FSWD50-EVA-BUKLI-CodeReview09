@@ -40,3 +40,16 @@ UNION
 SELECT driver.driver_name, address.zip, address.city, address.street, address.street_number 
 FROM `driver` 
 RIGHT JOIN `address` on driver.FK_address_id = address.address_id
+
+
+---Union JOIN2---
+
+SELECT manufacturer.manufacturer_name, car_description.car_type, car_description.fuel_type, car_description.licence_plate, car_description.color
+FROM `manufacturer` 
+LEFT JOIN `car` on car.FK_manufacturer_id=manufacturer.manufacturer_id
+LEFT JOIN `car_description` on car.FK_description_id=car_description.description_id
+UNION 
+SELECT car_description.car_type, manufacturer.manufacturer_name, car_description.fuel_type, car_description.licence_plate, car_description.color
+FROM `manufacturer` 
+RIGHT JOIN `car` on car.FK_manufacturer_id=manufacturer.manufacturer_id
+RIGHT  JOIN `car_description` on car.FK_description_id=car_description.description_id
