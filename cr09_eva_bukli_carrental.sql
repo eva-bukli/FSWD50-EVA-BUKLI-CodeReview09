@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 04, 2018 at 12:42 PM
+-- Generation Time: Nov 04, 2018 at 01:13 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -199,9 +199,9 @@ INSERT INTO `car_description` (`description_id`, `licence_plate`, `car_type`, `f
 (4, 'CVB-567', 'A6', 'gasoline', 3, 'silver'),
 (5, 'ERT-567', '508', 'gasoline', 5, 'black'),
 (6, 'ASD-234', 'Civic', 'diesel', 4, 'red'),
-(7, 'QWE-897', 'S90', 'diesel', 4, 'blue'),
+(7, 'QWE-897', 'S90', 'hybrid', 4, 'blue'),
 (8, 'WER-789', 'SuperB', 'diesel', 6, 'white'),
-(9, 'RTZ-567', 'Ignis', 'diesel', 5, 'gray'),
+(9, 'RTZ-567', 'Ignis', 'electric', 5, 'gray'),
 (10, 'YXC-123', 'Yaris', 'diesel', 4, 'white');
 
 -- --------------------------------------------------------
